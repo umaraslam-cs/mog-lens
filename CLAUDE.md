@@ -127,7 +127,7 @@ Source of truth for `AppColor`.
 - Text: `#EAEDEA` primary, `#8FA094` secondary
 - Success/good `#3DDCFF` (cyan, so a strong score doesn't blend into the lime accent — note the client's MVP list asked for **green** bars for strong scores), warning/acceptable `#FFB84D`, needs work `#FF6B4A`
 - Baked-in cyan in the onboarding artwork and videos (mesh, goal, halo, discover-face images; `futureself.mp4/.gif`, `technologysteps.mp4`) was hue-shifted to lime selectively, leaving skin and photo tones alone. `TechnologyPortrait` (client-supplied) and the doctor photos were not touched.
-- The app icon and splash logo were **not** changed in the rebrand; they are still the client's monochrome mark.
+- App icon and splash logo replaced Nov 1, 2026 with the developer-supplied "metallic scanner head in green light" art (chrome low-poly head inside lime scan brackets). `AppIcon.png` is the opaque 1024 crop; `app_logo.png` is the same art on a 1164px rounded tile with transparent corners, matching the old asset so the splash layout is unchanged.
 
 Logo direction: dark, skull-based, teal/cyan facial-landmark mesh overlay. Final logo plus a transparent 1024×1024 PNG for splash were delivered by the client.
 
