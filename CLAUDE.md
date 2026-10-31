@@ -116,14 +116,18 @@ Keyed metric × tier. Tier ranges below are the client's placeholders — **adju
 - *Mid:* solid range — facial fat loss is the biggest lever left; a well-placed hairline/fringe visually shortens midface perception.
 - *High:* a genuine strength, part of the "compact" hunter look — keep facial leanness up to preserve it.
 
-## Brand palette (client-specified)
+## Brand palette
 
-Source of truth for `AppColor`. Hex values came from the client directly:
+Source of truth for `AppColor`.
 
-- Background: deep black → dark navy gradient, `#000000` → `#0E1F2E`
-- Primary accent: cyan/teal, `#3FD4D9` → `#2A8FD6` — glows, highlights, progress bars, CTAs
-- Text: `#EAEAEA` primary, `#8B98A3` secondary
-- Success/good `#37D67A`, warning/acceptable `#FFB84D`, needs work `#FF6B4A`
+**Rebranded to acid lime on Nov 1, 2026**, replacing the client's original cyan-on-navy values (`#3FD4D9 → #2A8FD6` on `#000000 → #0E1F2E`). Current tokens:
+
+- Background: black → deep green-black gradient, `#000000` → `#07130A` (58%) → `#0F1A12`
+- Primary accent: acid lime → green, `#C6FF3D` → `#3DFF8A` — glows, highlights, progress bars, CTAs; `#0A1405` on top of it
+- Text: `#EAEDEA` primary, `#8FA094` secondary
+- Success/good `#3DDCFF` (cyan, so a strong score doesn't blend into the lime accent — note the client's MVP list asked for **green** bars for strong scores), warning/acceptable `#FFB84D`, needs work `#FF6B4A`
+- Baked-in cyan in the onboarding artwork and videos (mesh, goal, halo, discover-face images; `futureself.mp4/.gif`, `technologysteps.mp4`) was hue-shifted to lime selectively, leaving skin and photo tones alone. `TechnologyPortrait` (client-supplied) and the doctor photos were not touched.
+- The app icon and splash logo were **not** changed in the rebrand; they are still the client's monochrome mark.
 
 Logo direction: dark, skull-based, teal/cyan facial-landmark mesh overlay. Final logo plus a transparent 1024×1024 PNG for splash were delivered by the client.
 

@@ -61,7 +61,7 @@ struct PersonalGapStepView: View {
         }
     }
 
-    /// Left Card: User's self-reported score with portrait background and cyan active border
+    /// Left Card: User's self-reported score with portrait background and accent active border
     private var leftSelfReportedCard: some View {
         VStack(spacing: 0) {
             // Main visual area with portrait background
@@ -103,7 +103,7 @@ struct PersonalGapStepView: View {
             }
             .frame(maxWidth: .infinity)
             .frame(height: 58)
-            .background(Color(hex: 0x08131C))
+            .background(AppColor.panelInk)
         }
         .frame(height: 228)
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
@@ -146,7 +146,7 @@ struct PersonalGapStepView: View {
             }
             .frame(maxWidth: .infinity)
             .frame(height: 170)
-            .background(Color(hex: 0x0A141E))
+            .background(AppColor.panel)
 
             // Bottom Caption
             VStack {
@@ -159,7 +159,7 @@ struct PersonalGapStepView: View {
             }
             .frame(maxWidth: .infinity)
             .frame(height: 58)
-            .background(Color(hex: 0x071017))
+            .background(AppColor.panelInk)
         }
         .frame(height: 228)
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))

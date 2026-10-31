@@ -1,7 +1,7 @@
 import SwiftUI
 
 extension Color {
-    /// Creates a colour from a packed 24-bit RGB literal, e.g. `Color(hex: 0x3FD4D9)`.
+    /// Creates a colour from a packed 24-bit RGB literal, e.g. `Color(hex: 0xC6FF3D)`.
     init(hex: UInt32, opacity: Double = 1) {
         self.init(
             .sRGB,
@@ -22,25 +22,26 @@ enum AppColor {
     // MARK: Background
 
     static let backgroundTop = Color(hex: 0x000000)
-    static let backgroundMid = Color(hex: 0x06131C)
-    static let backgroundBottom = Color(hex: 0x0E1F2E)
+    static let backgroundMid = Color(hex: 0x07130A)
+    static let backgroundBottom = Color(hex: 0x0F1A12)
 
     // MARK: Accent
 
-    static let accentStart = Color(hex: 0x3FD4D9)
-    static let accentEnd = Color(hex: 0x2A8FD6)
+    static let accentStart = Color(hex: 0xC6FF3D)
+    static let accentEnd = Color(hex: 0x3DFF8A)
     /// Foreground used on top of the accent gradient.
-    static let onAccent = Color(hex: 0x04141B)
+    static let onAccent = Color(hex: 0x0A1405)
 
     // MARK: Text
 
-    static let textPrimary = Color(hex: 0xEAEAEA)
-    static let textSecondary = Color(hex: 0x8B98A3)
+    static let textPrimary = Color(hex: 0xEAEDEA)
+    static let textSecondary = Color(hex: 0x8FA094)
 
     // MARK: Semantic
 
-    /// Excellent — ≥ 75th percentile.
-    static let success = Color(hex: 0x37D67A)
+    /// Excellent — ≥ 75th percentile. Cyan rather than green so a strong score
+    /// never blends into the lime accent it sits beside.
+    static let success = Color(hex: 0x3DDCFF)
     /// Average — 40th–74th percentile.
     static let warning = Color(hex: 0xFFB84D)
     /// Needs improvement — < 40th percentile.
@@ -70,13 +71,33 @@ enum AppColor {
     // MARK: Component-specific
 
     /// Core disc punched out of the home score ring.
-    static let scoreRingCore = Color(hex: 0x08151E)
-    static let tabBarBackground = Color(hex: 0x081017).opacity(0.86)
-    static let sheetTop = Color(hex: 0x0B1721)
-    static let sheetBottom = Color(hex: 0x0E1F2E)
+    static let scoreRingCore = Color(hex: 0x09150C)
+    static let tabBarBackground = Color(hex: 0x08100A).opacity(0.86)
+    static let sheetTop = Color(hex: 0x0C170E)
+    static let sheetBottom = Color(hex: 0x0F1A12)
     /// System alert chrome — matched to iOS, never restyled.
     static let systemAlertSurface = Color(hex: 0x262C32).opacity(0.92)
     static let systemBlue = Color(hex: 0x0A84FF)
+
+    // MARK: Panels
+
+    /// Opaque card fill laid over photos and video, where a 4.5% white surface
+    /// would let the artwork show through. Usually drawn at 75–90% opacity.
+    static let panel = Color(hex: 0x0B150E)
+    /// Darker panel for floating chips and the expert/social-proof cards.
+    static let panelDeep = Color(hex: 0x0D120E)
+    /// Near-background fill for inset rows and the scanner readout.
+    static let panelInk = Color(hex: 0x08120B)
+    /// Bottom of the technology screen's video fade, one step below `panelInk`.
+    static let technologyFade = Color(hex: 0x050C07)
+    /// Empty photo slot, top to bottom.
+    static let photoPlaceholderTop = Color(hex: 0x0B180E)
+    static let photoPlaceholderBottom = Color(hex: 0x132B19)
+    /// Expert avatar disc, top to bottom.
+    static let avatarTop = Color(hex: 0x0F2314)
+    static let avatarBottom = Color(hex: 0x07160A)
+    /// Filled rating star — the App Store gold, not a brand colour.
+    static let ratingStar = Color(hex: 0xFFD700)
 
     // MARK: Tinted fills
 

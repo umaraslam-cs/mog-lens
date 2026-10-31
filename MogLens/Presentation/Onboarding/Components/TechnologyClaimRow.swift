@@ -43,7 +43,7 @@ struct TechnologyClaimRow: View {
         .padding(.vertical, 14)
         .background {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Color(hex: 0x0A141D).opacity(0.85))
+                .fill(AppColor.panel.opacity(0.85))
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .fill(AppColor.surface)

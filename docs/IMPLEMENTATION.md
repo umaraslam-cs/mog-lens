@@ -81,10 +81,10 @@ from Settings and the paywall but never draws them. One sheet renders either —
 
 Taken verbatim from the design system section of the prototype.
 
-- **Background** `#000000 → #06131C 58% → #0E1F2E` (`AppGradient.background`)
-- **Accent** `#3FD4D9 → #2A8FD6` (`AppGradient.accent`)
-- **Text** `#EAEAEA` primary, `#8B98A3` secondary
-- **Semantic** `#37D67A` excellent · `#FFB84D` average · `#FF6B4A` needs improvement
+- **Background** `#000000 → #07130A 58% → #0F1A12` (`AppGradient.background`)
+- **Accent** `#C6FF3D → #3DFF8A` (`AppGradient.accent`)
+- **Text** `#EAEDEA` primary, `#8FA094` secondary
+- **Semantic** `#3DDCFF` excellent · `#FFB84D` average · `#FF6B4A` needs improvement
   (thresholds ≥75th / 40–74th / <40th, in `MetricRating`)
 - **Surfaces** white 4.5%, hairlines white 8% — never a solid grey fill
 - **Radii** 10 controls · 16 buttons & cards · 18 list cards · 24 hero cards

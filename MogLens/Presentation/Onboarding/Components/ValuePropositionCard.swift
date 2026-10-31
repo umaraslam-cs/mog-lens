@@ -57,7 +57,7 @@ struct ValuePropositionCard: View {
         .background {
             // Refined dark glassmorphic surface with subtle specular gradient
             RoundedRectangle(cornerRadius: Radius.listCard, style: .continuous)
-                .fill(Color(hex: 0x0A141D).opacity(0.80))
+                .fill(AppColor.panel.opacity(0.80))
                 .background(
                     RoundedRectangle(cornerRadius: Radius.listCard, style: .continuous)
                         .fill(AppColor.surface)

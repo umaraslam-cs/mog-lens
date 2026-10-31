@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 /// Custom interactive step slider (1...10) for the Self Rating onboarding screen.
-/// Features a glowing cyan target thumb, discrete tick marks along the track,
+/// Features a glowing accent target thumb, discrete tick marks along the track,
 /// tactile haptic feedback on step changes, and anchor perception labels.
 struct SelfRatingSlider: View {
     @Binding var rating: Int
@@ -71,7 +71,7 @@ struct SelfRatingSlider: View {
                         // Outer Ring
                         Circle()
                             .strokeBorder(AppColor.accentStart, lineWidth: 2.5)
-                            .background(Circle().fill(Color(hex: 0x06141D)))
+                            .background(Circle().fill(AppColor.panelInk))
                             .frame(width: thumbDiameter, height: thumbDiameter)
                             .shadow(color: AppColor.accentStart.opacity(0.65), radius: 8)
 
@@ -118,7 +118,7 @@ struct SelfRatingSlider: View {
         .background {
             // Glassmorphic card surface
             RoundedRectangle(cornerRadius: Radius.hero, style: .continuous)
-                .fill(Color(hex: 0x0A141D).opacity(0.80))
+                .fill(AppColor.panel.opacity(0.80))
                 .background(
                     RoundedRectangle(cornerRadius: Radius.hero, style: .continuous)
                         .fill(AppColor.surface)

@@ -13,7 +13,7 @@ struct CameraPermissionAlertView: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                colors: [AppColor.backgroundTop, Color(hex: 0x0A1620)],
+                colors: [AppColor.backgroundTop, AppColor.sheetTop],
                 startPoint: .top,
                 endPoint: .bottom
             )

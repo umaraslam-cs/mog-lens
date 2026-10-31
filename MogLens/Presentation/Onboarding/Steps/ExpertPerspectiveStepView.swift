@@ -142,7 +142,7 @@ struct ExpertPerspectiveStepView: View {
                         ZStack {
                             Circle()
                                 .fill(LinearGradient(
-                                    colors: [Color(hex: 0x0E2231), Color(hex: 0x061621)],
+                                    colors: [AppColor.avatarTop, AppColor.avatarBottom],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 ))
@@ -202,7 +202,7 @@ struct ExpertPerspectiveStepView: View {
         .padding(20)
         .background {
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(Color(hex: 0x0C1217).opacity(0.92))
+                .fill(AppColor.panelDeep.opacity(0.92))
                 .background(
                     RoundedRectangle(cornerRadius: 18, style: .continuous)
                         .fill(AppColor.surfaceStrong)

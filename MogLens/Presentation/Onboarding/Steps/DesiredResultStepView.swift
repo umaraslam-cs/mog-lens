@@ -115,7 +115,7 @@ struct DesiredResultStepView: View {
             .frame(maxWidth: .infinity, minHeight: 116, alignment: .topLeading)
             .background {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Color(hex: 0x0A141D).opacity(0.85))
+                    .fill(AppColor.panel.opacity(0.85))
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(AppColor.surface)
@@ -196,7 +196,7 @@ struct DesiredResultStepView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Color(hex: 0x0A141D).opacity(0.85))
+                    .fill(AppColor.panel.opacity(0.85))
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(AppColor.surface)

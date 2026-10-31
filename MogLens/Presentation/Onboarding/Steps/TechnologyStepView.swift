@@ -80,10 +80,10 @@ struct TechnologyStepView: View {
         }
     }
 
-    /// Hero visual card with biometric facial landmark mapping video and cyan ambient rim glow
+    /// Hero visual card with biometric facial landmark mapping video and accent ambient rim glow
     private var landmarkHeroCard: some View {
         ZStack(alignment: .top) {
-            // Ambient cyan spotlight glow behind the hero container
+            // Ambient accent spotlight glow behind the hero container
             RadialGlow(
                 color: AppColor.accentStart,
                 opacity: 0.16,
@@ -102,8 +102,8 @@ struct TechnologyStepView: View {
                     LinearGradient(
                         stops: [
                             .init(color: .clear, location: 0.65),
-                            .init(color: Color(hex: 0x050C12).opacity(0.85), location: 0.95),
-                            .init(color: Color(hex: 0x050C12), location: 1.0)
+                            .init(color: AppColor.technologyFade.opacity(0.85), location: 0.95),
+                            .init(color: AppColor.technologyFade, location: 1.0)
                         ],
                         startPoint: .top,
                         endPoint: .bottom
@@ -130,7 +130,7 @@ struct TechnologyStepView: View {
         }
         .frame(height: 270)
         .frame(maxWidth: .infinity)
-        .background(Color(hex: 0x07111A))
+        .background(AppColor.panelInk)
         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
         .overlay {
             RoundedRectangle(cornerRadius: 24, style: .continuous)

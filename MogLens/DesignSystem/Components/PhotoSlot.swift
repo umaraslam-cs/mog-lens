@@ -49,7 +49,7 @@ struct PhotoSlot: View {
     private var placeholderContent: some View {
         ZStack {
             LinearGradient(
-                colors: [Color(hex: 0x0A1822), Color(hex: 0x122B39)],
+                colors: [AppColor.photoPlaceholderTop, AppColor.photoPlaceholderBottom],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )

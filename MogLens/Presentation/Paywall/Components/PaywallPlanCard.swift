@@ -200,7 +200,7 @@ struct AccordionBenefitCard: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Color(hex: 0x0A141D).opacity(isExpanded ? 0.90 : 0.75))
+                    .fill(AppColor.panel.opacity(isExpanded ? 0.90 : 0.75))
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(AppColor.surface)

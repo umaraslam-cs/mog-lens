@@ -60,7 +60,7 @@ struct FutureSelfStepView: View {
     /// Circular glowing viewport presenting the 3D wireframe mesh
     private var heroVisual: some View {
         ZStack {
-            // Ambient cyan spotlight cone / glow
+            // Ambient accent spotlight cone / glow
             RadialGlow(
                 color: AppColor.accentStart,
                 opacity: 0.18,
@@ -119,7 +119,7 @@ struct FutureSelfStepView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background {
             RoundedRectangle(cornerRadius: Radius.card, style: .continuous)
-                .fill(Color(hex: 0x0A141D).opacity(0.85))
+                .fill(AppColor.panel.opacity(0.85))
                 .background(
                     RoundedRectangle(cornerRadius: Radius.card, style: .continuous)
                         .fill(AppColor.surface)

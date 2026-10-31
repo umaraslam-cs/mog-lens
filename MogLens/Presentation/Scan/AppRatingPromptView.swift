@@ -52,7 +52,7 @@ struct AppRatingPromptView: View {
 
                 // Main Prompt Content Card
                 VStack(spacing: Spacing.l) {
-                    // 1. App Icon with glowing cyan rim
+                    // 1. App Icon with glowing accent rim
                     ZStack {
                         Image(AppImage.logo)
                             .resizable()
@@ -109,12 +109,12 @@ struct AppRatingPromptView: View {
                                     .font(.system(size: 34, weight: .semibold))
                                     .foregroundStyle(
                                         star <= selectedStars
-                                            ? Color(hex: 0xFFD700)
+                                            ? AppColor.ratingStar
                                             : Color.white.opacity(0.2)
                                     )
                                     .shadow(
                                         color: star <= selectedStars
-                                            ? Color(hex: 0xFFD700).opacity(0.4)
+                                            ? AppColor.ratingStar.opacity(0.4)
                                             : Color.clear,
                                         radius: 6,
                                         x: 0,

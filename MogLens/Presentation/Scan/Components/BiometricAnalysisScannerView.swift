@@ -383,7 +383,7 @@ private struct MiniStatBadge: View {
         }
         .padding(.horizontal, 6)
         .padding(.vertical, 3)
-        .background(Color(hex: 0x081217).opacity(0.92))
+        .background(AppColor.panelInk.opacity(0.92))
         .clipShape(Capsule())
         .overlay(Capsule().stroke(AppColor.accentStart.opacity(0.42), lineWidth: 0.8))
         .shadow(color: Color.black.opacity(0.5), radius: 3)

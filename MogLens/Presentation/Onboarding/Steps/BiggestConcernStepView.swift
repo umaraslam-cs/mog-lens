@@ -87,7 +87,7 @@ struct BiggestConcernStepView: View {
             .frame(height: 88)
             .background {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .fill(Color(hex: 0x0A141D).opacity(0.85))
+                    .fill(AppColor.panel.opacity(0.85))
                     .background(
                         RoundedRectangle(cornerRadius: 18, style: .continuous)
                             .fill(AppColor.surface)

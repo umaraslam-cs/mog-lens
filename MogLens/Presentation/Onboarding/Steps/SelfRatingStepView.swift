@@ -82,7 +82,7 @@ struct SelfRatingStepView: View {
                             .frame(width: 140, height: 100)
                             .background {
                                 RoundedRectangle(cornerRadius: 22, style: .continuous)
-                                    .fill(Color(hex: 0x0A141D).opacity(0.85))
+                                    .fill(AppColor.panel.opacity(0.85))
                                     .background(
                                         RoundedRectangle(cornerRadius: 22, style: .continuous)
                                             .fill(AppColor.surface)

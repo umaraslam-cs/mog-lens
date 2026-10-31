@@ -155,7 +155,7 @@ struct SocialProofStepView: View {
         .padding(18)
         .background {
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(Color(hex: 0x0C1217).opacity(0.92))
+                .fill(AppColor.panelDeep.opacity(0.92))
                 .background(
                     RoundedRectangle(cornerRadius: 18, style: .continuous)
                         .fill(AppColor.surfaceStrong)

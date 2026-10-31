@@ -3,7 +3,7 @@ import SwiftUI
 /// Gradient tokens. The app only ever uses two families: the background wash and the accent ramp.
 enum AppGradient {
 
-    /// `#000000 0% → #06131C 58% → #0E1F2E 100%`, top to bottom.
+    /// `#000000 0% → #07130A 58% → #0F1A12 100%`, top to bottom.
     static let background = LinearGradient(
         stops: [
             .init(color: AppColor.backgroundTop, location: 0),
@@ -14,7 +14,7 @@ enum AppGradient {
         endPoint: .bottom
     )
 
-    /// `#3FD4D9 → #2A8FD6`, top to bottom. Buttons, badges, ring fills.
+    /// `#C6FF3D → #3DFF8A`, top to bottom. Buttons, badges, ring fills.
     static let accent = LinearGradient(
         colors: [AppColor.accentStart, AppColor.accentEnd],
         startPoint: .top,
@@ -30,14 +30,14 @@ enum AppGradient {
 
     /// Pressed state of a primary button: the accent ramp darkened one step.
     static let accentPressed = LinearGradient(
-        colors: [Color(hex: 0x35B7BC), Color(hex: 0x2378B4)],
+        colors: [Color(hex: 0xA8D934), Color(hex: 0x34D975)],
         startPoint: .top,
         endPoint: .bottom
     )
 
     /// Top tier badge — brighter than the standard accent ramp.
     static let chadBadge = LinearGradient(
-        colors: [Color(hex: 0xEAF9FA), AppColor.accentStart],
+        colors: [Color(hex: 0xF4FFE0), AppColor.accentStart],
         startPoint: .top,
         endPoint: .bottom
     )
