@@ -2,7 +2,7 @@ import SwiftUI
 import StoreKit
 import UIKit
 
-/// Pre-paywall prompt encouraging users to rate MogScan on the App Store.
+/// Pre-paywall prompt encouraging users to rate MogLens on the App Store.
 /// Handles both the native StoreKit `requestReview` prompt and direct App Store fallback,
 /// with simulator-safe handling to prevent "invalid URL" errors during testing.
 struct AppRatingPromptView: View {

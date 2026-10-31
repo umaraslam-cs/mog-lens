@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<!--
-	  Mogscan collects nothing.
+	  MogLens collects nothing.
 
 	  Photos are read into a Vision request and written to the app container;
 	  neither the image nor any measurement leaves the device. There is no

@@ -10,8 +10,8 @@
     <string>QVA3ZF63S6</string>
     <key>provisioningProfiles</key>
     <dict>
-        <key>com.mogscan.app</key>
-        <string>Mogscan Distribution</string>
+        <key>com.moglens.app</key>
+        <string>MogLens Distribution</string>
     </dict>
 </dict>
 </plist>

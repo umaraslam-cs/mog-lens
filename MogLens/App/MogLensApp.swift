@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct MogscanApp: App {
+struct MogLensApp: App {
     @State private var dependencies = AppDependencies()
 
     init() {

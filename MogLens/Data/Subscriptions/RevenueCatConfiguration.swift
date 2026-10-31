@@ -10,8 +10,9 @@ enum RevenueCatConfiguration {
     /// Public SDK key, from RevenueCat → Project settings → API keys → Apple.
     ///
     /// Safe to ship in the binary: RevenueCat issues a separate secret key for
-    /// server calls, which this app never makes. This is the live key for the
-    /// client's `mogscan` project (App Store app `com.mogscan.app`).
+    /// server calls, which this app never makes. This key was issued for the
+    /// RevenueCat app registered against the previous bundle ID. RevenueCat
+    /// needs a new Apple app for `com.moglens.app`, and its key replaces this one.
     static let apiKey = "appl_wcTiyIETugORJPvFPIUqNorvsXK"
 
     /// The entitlement both plans unlock. Must match the identifier configured
@@ -20,14 +21,14 @@ enum RevenueCatConfiguration {
 
     /// Store product identifiers, one per plan.
     ///
-    /// These are the IDs that already exist in the `Mogscan Pro` subscription
-    /// group on App Store Connect, and the same ones the RevenueCat products
-    /// carry. An App Store product ID cannot be renamed once created, so the
-    /// app matches the store rather than the other way round.
+    /// These must match the products in the `MogLens Pro` subscription group on
+    /// App Store Connect and the RevenueCat products. App Store product IDs
+    /// cannot be renamed once created, so after the rename these are new
+    /// products that still have to be created under `com.moglens.app`.
     static func productIdentifier(for period: SubscriptionPlan.Period) -> String {
         switch period {
-        case .monthly: "mogscan_monthly"
-        case .annual: "mogscan_annual"
+        case .monthly: "moglens_monthly"
+        case .annual: "moglens_annual"
         }
     }
 

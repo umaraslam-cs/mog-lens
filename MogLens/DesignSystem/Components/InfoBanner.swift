@@ -88,7 +88,7 @@ struct HairlineDivider: View {
         VStack(spacing: Spacing.m) {
             InfoBanner(
                 symbol: AppSymbol.info,
-                title: "Your target sets the gap Mogscan measures you against."
+                title: "Your target sets the gap MogLens measures you against."
             )
             InfoBanner(
                 symbol: AppSymbol.priority,

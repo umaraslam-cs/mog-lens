@@ -1,7 +1,7 @@
 # Privacy Policy
 
 The app ships this policy twice: in `DesignContent.Legal.privacy`, shown on the
-Settings > Privacy Policy screen, and at **https://mogscan.org/privacy.html**,
+Settings > Privacy Policy screen, and at **https://moglens.org/privacy.html**,
 the URL registered in App Store Connect. **The two must match word for word.**
 App Review reads the published page, quotes it back, and rejects the build when
 the app claims something the page does not say.
@@ -33,12 +33,12 @@ image files themselves, not just their listing, is accurate.
 
 Last updated: September 17, 2026
 
-Mogscan ("we", "us", "our") respects your privacy. This policy explains what
-happens when you use the Mogscan app.
+MogLens ("we", "us", "our") respects your privacy. This policy explains what
+happens when you use the MogLens app.
 
 ### Facial Scan Data
 
-When you use Mogscan's facial scan feature, your photo is processed entirely on
+When you use MogLens's facial scan feature, your photo is processed entirely on
 your device using Apple's Vision framework. Your photo is never uploaded,
 transmitted, or stored on any server we control. The analysis (facial landmarks,
 measurements, and resulting score) happens locally on your iPhone and is not
@@ -54,11 +54,11 @@ We collect the minimum information necessary to operate the app:
   collected automatically by Apple's standard App Store Connect analytics.
 
 We do not collect your name, email, or any personal account information, since
-Mogscan does not require account creation.
+MogLens does not require account creation.
 
 ### Third-Party Services
 
-Mogscan uses the following third-party services:
+MogLens uses the following third-party services:
 
 - Apple Vision Framework - for on-device facial landmark detection. No data
   leaves your device for this purpose.
@@ -75,7 +75,7 @@ choice each time you take or import a photo. You can revoke your consent to any
 future face data collection at any time by not using the scan feature again, or
 by deleting the app entirely.
 
-Mogscan gives you two ways to delete your face data directly inside the app:
+MogLens gives you two ways to delete your face data directly inside the app:
 
 - Delete a single scan - on the Home screen, press and hold any scan in your
   History, then tap "Delete Scan." This permanently removes that photo and its
@@ -97,13 +97,13 @@ copy for us to delete, and no third party ever receives or stores it.
 
 Since scan photos and results are stored only locally on your device, deleting
 the app removes all of this data permanently. We hold no copy of it on any
-server. Should Mogscan ever share face data with a third-party service in the
+server. Should MogLens ever share face data with a third-party service in the
 future, that service would be contractually required to provide the same or
 equal protection of that data as described in this policy.
 
 ### Children's Privacy
 
-Mogscan is not directed at children under 13, and we do not knowingly collect
+MogLens is not directed at children under 13, and we do not knowingly collect
 any information from children under 13.
 
 ### Changes to This Policy

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Build Mogscan and run it, on a simulator or on the connected iPhone.
+# Build MogLens and run it, on a simulator or on the connected iPhone.
 #
 #   scripts/run.sh                  # booted simulator, or iPhone 17 Pro if none
 #   scripts/run.sh "iPhone 16"      # named simulator, booting it if needed
@@ -17,9 +17,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-SCHEME=Mogscan
-PROJECT=Mogscan.xcodeproj
-BUNDLE_ID=com.mogscan.app
+SCHEME=MogLens
+PROJECT=MogLens.xcodeproj
+BUNDLE_ID=com.moglens.app
 DERIVED=.build/derived
 DEFAULT_SIMULATOR="iPhone 17 Pro"
 

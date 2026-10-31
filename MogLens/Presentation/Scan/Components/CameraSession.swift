@@ -24,7 +24,7 @@ final class CameraSession: NSObject, @unchecked Sendable {
     @ObservationIgnored let session = AVCaptureSession()
 
     @ObservationIgnored private let output = AVCapturePhotoOutput()
-    @ObservationIgnored private let queue = DispatchQueue(label: "com.mogscan.camera.session")
+    @ObservationIgnored private let queue = DispatchQueue(label: "com.moglens.camera.session")
     @ObservationIgnored private var isConfigured = false
     @ObservationIgnored private var pendingCapture: CheckedContinuation<UIImage, Error>?
 

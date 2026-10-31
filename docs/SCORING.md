@@ -1,4 +1,4 @@
-# Mogscan — how the score is calculated
+# MogLens — how the score is calculated
 
 Reference for the M2 build. Every number the app shows is derived from the
 measurements described here. Nothing is estimated, guessed, or produced by a

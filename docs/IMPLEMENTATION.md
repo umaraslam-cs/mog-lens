@@ -1,14 +1,14 @@
-# Mogscan — SwiftUI implementation notes
+# MogLens — SwiftUI implementation notes
 
-The 17 screens in `project/Mogscan.dc.html` built as a native iOS app. UI only:
+The 17 screens in `project/MogLens.dc.html` built as a native iOS app. UI only:
 no Vision requests, no StoreKit transactions, no persistence. Every screen
 renders from static content that mirrors the design exactly.
 
 - **Target:** iOS 17.0, iPhone, portrait, dark only
-- **Open with:** `Mogscan.xcodeproj` (Xcode 16 or later — the project uses
-  file-system-synchronized groups, so new files in `Mogscan/` are picked up
+- **Open with:** `MogLens.xcodeproj` (Xcode 16 or later — the project uses
+  file-system-synchronized groups, so new files in `MogLens/` are picked up
   without editing the project file)
-- **Bundle ID:** `com.mogscan.app`
+- **Bundle ID:** `com.moglens.app`
 
 ## Architecture
 
@@ -16,8 +16,8 @@ Clean Architecture with MVVM. Dependencies point inward: `Presentation → Domai
 and `Data → Domain`. Nothing in `Domain` imports SwiftUI.
 
 ```
-Mogscan/
-  App/              MogscanApp, RootView, AppRouter — launch → onboarding → tabs
+MogLens/
+  App/              MogLensApp, RootView, AppRouter — launch → onboarding → tabs
   Core/
     Constants/      AppSymbol — the design's icon table resolved to SF Symbols
     DI/             AppDependencies (composition root), PreviewData
@@ -196,10 +196,10 @@ accessibility text sizes, where no gap is enough.
 Vision (M2) and the subscription layer (M3) are wired. What remains:
 
 - **Nothing on the store side.** RevenueCat is wired to the client's live
-  `mogscan` project: the public SDK key is in `RevenueCatConfiguration`, the
+  `moglens` project: the public SDK key is in `RevenueCatConfiguration`, the
   entitlement is `premium`, and the `default` offering carries `$rc_annual` →
-  `mogscan_annual` and `$rc_monthly` → `mogscan_monthly`. Both products exist in
-  the `Mogscan Pro` subscription group on App Store Connect at $39.99/year and
+  `moglens_annual` and `$rc_monthly` → `moglens_monthly`. Both products exist in
+  the `MogLens Pro` subscription group on App Store Connect at $39.99/year and
   $12.99/month. They sit at *Prepare for Submission*: Apple requires the first
   subscription group be submitted with an app version, so purchases only run in
   sandbox until the build ships — and RevenueCat shows the products as
@@ -209,6 +209,6 @@ Vision (M2) and the subscription layer (M3) are wired. What remains:
   exception is the Privacy Policy's **Facial Scan Data** and **Data Retention and
   Deletion** sections, rewritten on 17 September 2026 to carry what App Review
   asks for under 5.1.1(i) — see `docs/PRIVACY-POLICY.md`, which is the text the
-  published policy at mogscan.org/privacy.html has to match word for word.
+  published policy at moglens.org/privacy.html has to match word for word.
 - **App Store submission** (M4): metadata, screenshots and the Transporter
   upload. `Resources/PrivacyInfo.xcprivacy` is already in place.

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Archives Mogscan and exports a distribution IPA for TestFlight.
+# Archives MogLens and exports a distribution IPA for TestFlight.
 #
 #   scripts/release.sh              # archive + export, auto-bumps the build number
 #   scripts/release.sh --build 42   # pin an explicit build number
@@ -14,7 +14,7 @@
 # PROVISIONING_PROFILE_SPECIFIER on the xcodebuild command line applies it to
 # every target in the build, including RevenueCat's SPM target, which rejects
 # it outright: "RevenueCat_RevenueCat does not support provisioning profiles".
-# Both configurations already pin `Mogscan Distribution` for sdk=iphoneos*, so
+# Both configurations already pin `MogLens Distribution` for sdk=iphoneos*, so
 # the override bought nothing anyway. The export plist below still names the
 # profile — that step is app-target-only.
 #
@@ -26,11 +26,11 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-SCHEME="Mogscan"
-PROJECT="Mogscan.xcodeproj"
-BUNDLE_ID="com.mogscan.app"
+SCHEME="MogLens"
+PROJECT="MogLens.xcodeproj"
+BUNDLE_ID="com.moglens.app"
 TEAM_ID="QVA3ZF63S6"
-DIST_PROFILE="Mogscan Distribution"
+DIST_PROFILE="MogLens Distribution"
 
 OUT_DIR="build/release"
 ARCHIVE="$OUT_DIR/$SCHEME.xcarchive"
@@ -75,7 +75,7 @@ else
   BUILD=$(current_build)
 fi
 
-echo "==> Mogscan $VERSION ($BUILD)"
+echo "==> MogLens $VERSION ($BUILD)"
 
 rm -rf "$ARCHIVE"
 mkdir -p "$OUT_DIR"

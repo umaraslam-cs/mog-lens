@@ -85,7 +85,7 @@ enum DesignContent {
 
         static let targetRankTitle = "Where do you want to end up?"
         static let targetRankSubtitle = "Pick the tier you're training toward."
-        static let targetRankNote = "Your target sets the gap Mogscan measures you against."
+        static let targetRankNote = "Your target sets the gap MogLens measures you against."
         static let targetRankCTA = "Set Target"
 
         static let urgencyTitle = "Most men are guessing."
@@ -244,7 +244,7 @@ enum DesignContent {
         static let researchTitleLead = "What the research"
         static let researchTitleMid = "says about"
         static let researchTitleAccent = "first impressions."
-        static let researchCardFooter = "Research on how people are judged, not an endorsement of Mogscan."
+        static let researchCardFooter = "Research on how people are judged, not an endorsement of MogLens."
         static let researchCTA = "Continue"
         static let socialProofCTA = "Continue"
 
@@ -254,21 +254,21 @@ enum DesignContent {
                 headline: "People form an impression of a face in about a tenth of a second.",
                 quote: "\"minimal exposure to faces is sufficient for people to form trait impressions\"",
                 attribution: "Alexander Todorov & Janine Willis, Princeton University, Psychological Science, 2006",
-                footer: "Research on how people are judged, not an endorsement of Mogscan."
+                footer: "Research on how people are judged, not an endorsement of MogLens."
             ),
             .init(
                 id: 1,
                 headline: "Attractive faces tend to be judged as having better personalities and more future success.",
                 quote: "\"What is beautiful is good\" (the title of their study)",
                 attribution: "Karen Dion, Ellen Berscheid & Elaine Walster, Journal of Personality and Social Psychology, 1972",
-                footer: "Research on how people are judged, not an endorsement of Mogscan."
+                footer: "Research on how people are judged, not an endorsement of MogLens."
             ),
             .init(
                 id: 2,
                 headline: "Economist Daniel Hamermesh found attractive people tend to be more likely to be employed, earn more, and get loans approved.",
                 quote: nil,
                 attribution: "Daniel Hamermesh, University of Texas, Beauty Pays, Princeton University Press, 2011",
-                footer: "Research on how people are judged, not an endorsement of Mogscan."
+                footer: "Research on how people are judged, not an endorsement of MogLens."
             )
         ]
 
@@ -278,7 +278,7 @@ enum DesignContent {
     // MARK: - Splash
 
     enum Splash {
-        static let wordmark = "MOGSCAN"
+        static let wordmark = "MOGLENS"
         static let subtitle = "Facial Analysis"
         static let footer = "POWERED BY APPLE VISION"
     }
@@ -338,7 +338,7 @@ enum DesignContent {
         static let captureTitle = "Position your face"
         static let capturePhoto = "Live camera — male face, front-on"
 
-        static let permissionTitle = "“Mogscan” Would Like to Access the Camera"
+        static let permissionTitle = "“MogLens” Would Like to Access the Camera"
         static let permissionBody = """
         Your photo is used to detect facial landmarks on this device. \
         It is never uploaded.
@@ -675,8 +675,8 @@ enum DesignContent {
 
         /// Support inbox. Contact Support opens the mail app on this address
         /// with the subject prefilled, so a mail arrives already labelled.
-        static let supportEmail = "help@mogscan.app"
-        static let supportSubject = "Mogscan support"
+        static let supportEmail = "help@moglens.app"
+        static let supportSubject = "MogLens support"
 
         /// The App Store listing, used by both Rate App and Share App.
         ///
@@ -690,7 +690,7 @@ enum DesignContent {
 
         /// Sits above the link in the share sheet. Written to be forwarded to a
         /// friend, so it says what the app does rather than naming it twice.
-        static let shareSubject = "Mogscan — Facial Analysis"
+        static let shareSubject = "MogLens — Facial Analysis"
         static let shareMessage = """
         I ran my face through this — it measures jaw angle, symmetry and facial \
         thirds with real geometry and scores you against everyone else. \
@@ -784,15 +784,15 @@ enum DesignContent {
             title: "Privacy Policy",
             lastUpdated: "Last updated: September 17, 2026",
             summary: """
-            Mogscan ("we", "us", "our") respects your privacy. This policy \
-            explains what happens when you use the Mogscan app.
+            MogLens ("we", "us", "our") respects your privacy. This policy \
+            explains what happens when you use the MogLens app.
             """,
             sections: [
                 .init(
                     id: 0,
                     heading: "Facial Scan Data",
                     body: """
-                    When you use Mogscan's facial scan feature, your photo is \
+                    When you use MogLens's facial scan feature, your photo is \
                     processed entirely on your device using Apple's Vision \
                     framework. Your photo is never uploaded, transmitted, or \
                     stored on any server we control. The analysis (facial \
@@ -815,14 +815,14 @@ enum DesignContent {
                     Apple's standard App Store Connect analytics.
 
                     We do not collect your name, email, or any personal account \
-                    information, since Mogscan does not require account creation.
+                    information, since MogLens does not require account creation.
                     """
                 ),
                 .init(
                     id: 2,
                     heading: "Third-Party Services",
                     body: """
-                    Mogscan uses the following third-party services:
+                    MogLens uses the following third-party services:
 
                     \u{2022}  Apple Vision Framework - for on-device facial \
                     landmark detection. No data leaves your device for this \
@@ -845,7 +845,7 @@ enum DesignContent {
                     collection at any time by not using the scan feature again, \
                     or by deleting the app entirely.
 
-                    Mogscan gives you two ways to delete your face data \
+                    MogLens gives you two ways to delete your face data \
                     directly inside the app:
 
                     \u{2022}  Delete a single scan - on the Home screen, press \
@@ -875,7 +875,7 @@ enum DesignContent {
                     Since scan photos and results are stored only locally on \
                     your device, deleting the app removes all of this data \
                     permanently. We hold no copy of it on any server. Should \
-                    Mogscan ever share face data with a third-party service in \
+                    MogLens ever share face data with a third-party service in \
                     the future, that service would be contractually required to \
                     provide the same or equal protection of that data as \
                     described in this policy.
@@ -885,7 +885,7 @@ enum DesignContent {
                     id: 5,
                     heading: "Children's Privacy",
                     body: """
-                    Mogscan is not directed at children under 13, and we do not \
+                    MogLens is not directed at children under 13, and we do not \
                     knowingly collect any information from children under 13.
                     """
                 ),
@@ -912,7 +912,7 @@ enum DesignContent {
             title: "Terms of Use",
             lastUpdated: "Last updated 24 August 2026",
             summary: """
-            By downloading or using Mogscan ("the App"), you agree to these \
+            By downloading or using MogLens ("the App"), you agree to these \
             Terms of Use.
             """,
             sections: [
@@ -920,9 +920,9 @@ enum DesignContent {
                     id: 0,
                     heading: "Description of Service",
                     body: """
-                    Mogscan analyzes a photo of your face using on-device \
+                    MogLens analyzes a photo of your face using on-device \
                     geometric measurements to provide an aesthetic score, tier \
-                    ranking, and related content. Mogscan is intended for \
+                    ranking, and related content. MogLens is intended for \
                     entertainment and self-improvement purposes only.
                     """
                 ),
@@ -930,7 +930,7 @@ enum DesignContent {
                     id: 1,
                     heading: "Not Medical Advice",
                     body: """
-                    Mogscan does not provide medical, dermatological, \
+                    MogLens does not provide medical, dermatological, \
                     psychological, or professional advice of any kind. Results, \
                     tips, and routines shown in the app are for general \
                     informational purposes only and should not be relied upon as \
@@ -941,7 +941,7 @@ enum DesignContent {
                     id: 2,
                     heading: "Subscriptions",
                     body: """
-                    Mogscan offers auto-renewing subscription plans (monthly and \
+                    MogLens offers auto-renewing subscription plans (monthly and \
                     annual) that unlock full access to your scan results and \
                     related features.
 
@@ -960,7 +960,7 @@ enum DesignContent {
                     id: 3,
                     heading: "Acceptable Use",
                     body: """
-                    You agree not to use Mogscan to upload or attempt to analyze \
+                    You agree not to use MogLens to upload or attempt to analyze \
                     photos of anyone other than yourself without their consent, \
                     or to misuse the app in any way that violates applicable laws.
                     """
@@ -969,7 +969,7 @@ enum DesignContent {
                     id: 4,
                     heading: "Accuracy of Results",
                     body: """
-                    While Mogscan's measurements are based on real geometric \
+                    While MogLens's measurements are based on real geometric \
                     calculations from your photo, results are inherently limited \
                     by photo quality, angle, and lighting. We make no guarantee \
                     of clinical or scientific precision.
@@ -979,7 +979,7 @@ enum DesignContent {
                     id: 5,
                     heading: "Limitation of Liability",
                     body: """
-                    Mogscan is provided "as is" without warranties of any kind. \
+                    MogLens is provided "as is" without warranties of any kind. \
                     To the maximum extent permitted by law, we are not liable for \
                     any indirect, incidental, or consequential damages arising \
                     from your use of the app.
@@ -1016,7 +1016,7 @@ enum DesignContent {
 
     enum RatingPrompt {
         static let eyebrow = "APP STORE REVIEW"
-        static let title = "Enjoying MogScan?"
+        static let title = "Enjoying MogLens?"
         static let subtitle = "Your rating helps us refine our AI facial geometry models and keep improving your aesthetic analysis."
         static let trustBadge = "⭐ 4.9 • Trusted by 140,000+ Men"
         static let rateCTA = "RATE ON APP STORE"

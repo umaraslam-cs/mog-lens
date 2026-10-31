@@ -32,7 +32,7 @@ final class FileScanRepository: ScanRepositoryProtocol {
     init(directory: URL? = nil) {
         let base = directory ?? FileManager.default
             .urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("Mogscan", isDirectory: true)
+            .appendingPathComponent("MogLens", isDirectory: true)
 
         self.directory = base
         self.recordsURL = base.appendingPathComponent("scans.json")

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// The Mogscan mark: the logo scanned into view.
+/// The MogLens mark: the logo scanned into view.
 ///
 /// The mark sits dim, an accent sweep travels down it once, and everything the
 /// sweep has passed is left at full strength — the same gesture the analysing

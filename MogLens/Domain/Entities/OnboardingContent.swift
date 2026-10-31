@@ -160,7 +160,7 @@ enum ImprovementArea: String, CaseIterable, Identifiable, Hashable {
         }
     }
 
-    /// Contextual SF Symbols aligned with Mogscan's biometric and geometric design language
+    /// Contextual SF Symbols aligned with MogLens's biometric and geometric design language
     var symbol: String {
         switch self {
         case .jawline: "angle"

@@ -141,7 +141,7 @@ struct ResultsView: View {
     /// The tier picked in onboarding, set against the one just scored.
     ///
     /// This is what the target question was collected for — the onboarding copy
-    /// promises "your target sets the gap Mogscan measures you against", and
+    /// promises "your target sets the gap MogLens measures you against", and
     /// until now nothing read the answer back. Sits in the scroll rather than
     /// under the tier badge because the header is absolutely positioned and a
     /// sixth line there runs into the metrics list.

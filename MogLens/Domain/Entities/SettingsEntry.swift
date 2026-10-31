@@ -31,6 +31,6 @@ struct AppVersionInfo: Hashable {
     let buildNumber: String
     let disclaimer: String
 
-    /// e.g. "Mogscan 1.0.0 (24)".
-    var displayString: String { "Mogscan \(marketingVersion) (\(buildNumber))" }
+    /// e.g. "MogLens 1.0.0 (24)".
+    var displayString: String { "MogLens \(marketingVersion) (\(buildNumber))" }
 }
