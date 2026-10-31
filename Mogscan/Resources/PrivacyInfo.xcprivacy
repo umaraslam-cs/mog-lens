@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  Mogscan collects nothing.
+
+	  Photos are read into a Vision request and written to the app container;
+	  neither the image nor any measurement leaves the device. There is no
+	  account, no analytics SDK and no custom backend. RevenueCat is the one
+	  external service, and it ships its own privacy manifest inside its
+	  framework covering the purchase data and anonymous ID it handles — which is
+	  why nothing for it is repeated here.
+	-->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<!--
+			  AppRouter stores whether onboarding has run and the target tier.
+			  Read back only by this app, on this device.
+			-->
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
